@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px; /* Împiedică ascunderea elementelor sub meniul fix */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* Bara de Navigare (Header) */
+header {
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.logo svg {
+    fill: #f0f6fc;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.logo svg:hover {
+    opacity: 0.7;
+}
+
+/* Meniu Principal */
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-item {
+    position: relative;
+    padding: 0 12px;
+}
+
+.nav-link {
+    color: #e6edf3;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.nav-link::after {
+    content: "▾";
+    font-size: 10px;
+    color: #7d8590;
+}
+
+/* Meniuri Dropdown Interactive */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 12px;
+    min-width: 260px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+
+/* Clasa adăugată de JavaScript pentru afișare dropdown */
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-item {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.dropdown-item:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-link {
+    color: #7d8590;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.dropdown-link strong {
+    color: #e6edf3;
+    display: block;
+}
+
+.dropdown-link:hover {
+    background-color: #21262d;
+    color: #2f81f7;
+}
+
+.dropdown-link:hover strong {
+    color: #2f81f7;
+}
+
+/* Butoane de Autentificare (Dreapta) */
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-signin {
+    color: #e6edf3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-signin:hover {
+    color: #7d8590;
+}
+
+.btn-signup {
+    color: #ffffff;
+    background-color: #1f883d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(240,246,252,0.1);
+}
+
+.btn-signup:hover {
+    background-color: #238636;
+}
+
+/* Zona Principală (Hero Section) */
+.hero {
+    max-width: 1200px;
+    margin: 140px auto 40px auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #7af2a5, #2f81f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #7d8590;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* Formular de înregistrare Hero */
+.hero-form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.hero-form input {
+    flex: 1;
+    padding: 10px 12px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #e6edf3;
+    font-size: 15px;
+}
+
+.hero-form input:focus {
+    border-color: #2f81f7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(47,129,247,0.3);
+}
+
+.hero-form button {
+    background-color: #238636;
+    color: white;
+    border: 1px solid rgba(240,246,252,0.1);
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-form button:hover {
+    background-color: #2ea44f;
+}
+
+/* Secțiuni de Conținut (Containere) */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 24px;
+}
+
+.section-box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #21262d;
+    padding-bottom: 8px;
+    color: #f0f6fc;
+}
+
+p {
+    margin-bottom: 16px;
+    color: #c9d1d9;
+}
+
+/* Liste stilizate */
+ul {
+    list-style-position: inside;
+    margin-bottom: 16px;
+    color: #c9d1d9;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tabel pentru Comenzi GitBash */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #30363d;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #21262d;
+    color: #f0f6fc;
+}
+
+tr:nth-child(even) {
+    background-color: #0d1117;
+}
+
+code {
+    background-color: #21262d;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    color: #ff7b72;
+    font-size: 13px;
+}
+
+/* Subsol Pagina (Footer) */
+footer {
+    border-top: 1px solid #30363d;
+    padding: 40px 24px;
+    text-align: center;
+    background-color: #0d1117;
+    margin-top: 60px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    color: #2f81f7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    color: #7d8590;
+    font-size: 12px;
+}

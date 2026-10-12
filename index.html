@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiu de Caz: Importanța Utilizării Git & GitHub în Echipă</title>
+    <!-- Legătura către fișierul CSS extern -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bara de Navigare și Meniurile Interactive -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo GitHub SVG -->
+            <a href="#" class="logo" aria-label="Pagina de pornire GitHub">
+                <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32">
+                    <path d="M8 0c4.42 0 8 3.58 8 8a8 8 0 0 1-5.43 7.58c-.4.07-.55-.17-.55-.38 0-.19.01-.82.01-1.49 2.01.37 2.53-.49 2.69-.94.09-.23.48-.94.82-1.13.28-.15.68-.52.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+
+            <!-- Meniul Structurat -->
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#studiu-caz">Product</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#studiu-caz" class="dropdown-link">
+                                <strong>Studiu de Caz</strong>
+                                Informații despre lucrul în echipă prin Git.
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#ghid-comenzi" class="dropdown-link">
+                                <strong>Ghid Comenzi GitBash</strong>
+                                Instrucțiuni pas cu pas pentru proiect.
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#studiu-caz">Solutions</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#studiu-caz" class="dropdown-link">
+                                <strong>Pentru Proiecte Comune</strong>
+                                Cum colaborează echipele pe repository-uri.
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resurse-utile">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#resurse-utile" class="dropdown-link">
+                                <strong>Linkuri Documentație</strong>
+                                Referințele oficiale cerute în sarcină.
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Butoane de autentificare dreapta -->
+            <div class="auth-buttons">
+                <a href="https://github.com" class="btn-signin">Sign in</a>
+                <a href="https://github.com" class="btn-signup">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Zona Principală (Hero Section) -->
+    <main>
+        <section class="hero">
+    <h1>Viitorul dezvoltării se construiește împreună</h1>
+    <p>Aplicațiile de management al codului aduc dezvoltatorii și colaborarea pe o singură platformă unificată, securizată și optimizată.</p>
+    
+    <form class="hero-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Introdu adresa ta de email" aria-label="Adresa de email">
+        <a href="https://github.com" target="_blank" class="btn-signup" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Sign up for GitHub</a>
+    </form>
+</section>
+        <!-- Secțiunea 1: Studiu de Caz -->
+        <section id="studiu-caz" class="container">
+            <div class="section-box">
+                <h2>Studiu de Caz: Importanța Aplicațiilor de Lucru în Echipă (Git / GitHub)</h2>
+                <p>Lucrul în comun la un proiect software sau o pagină web necesită o coordonare strictă pentru a evita pierderile accidentale de date sau suprascrierea muncii colegilor. Utilizarea Git și GitHub rezolvă aceste provocări prin mecanisme sigure:</p>
+                <ul>
+                    <li><strong>Istoric și Managementul Versiunilor:</strong> Fiecare modificare adusă codului este stocată cronologic, permițând echipei să revină oricând la o stare anterioară stabilă a aplicației în caz de erori.</li>
+                    <li><strong>Ramificarea Codului (Branching):</strong> Membrii echipei pot crea ramuri de lucru separate pentru a dezvolta funcționalități individual, fără a perturba sau altera codul de bază de pe ramura principală (Main).</li>
+                    <li><strong>Sistem de Review (Pull Requests):</strong> Modificările propuse sunt verificate, comentate și aprobate de colegi înainte de a fi adăugate în mod definitiv în proiect, sporind calitatea codului.</li>
+                    <li><strong>Fluxuri Automatizate:</strong> Permite testarea proiectului și publicarea directă a acestuia pe platforme de hostare, așa cum este GitHub Pages.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Secțiunea 2: Ghid Comenzi GitBash -->
+        <section id="ghid-comenzi" class="container">
+            <div class="section-box">
+                <h2>Ghid de Lucru în Terminalul GitBash</h2>
+                <p>Pentru a îndeplini sarcinile din cerință și a încărca fișierele în repository-ul local și cel de pe GitHub, folosiți următoarea secvență de comenzi:</p>
+                
+                <div style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nr.</th>
+                                <th>Comandă GitBash</th>
+                                <th>Explicație / Rol în Proiect</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><code>git init</code></td>
+                                <td>Inițializează un repository Git local în dosarul curent al proiectului tău.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><code>git add index.html style.css script.js</code></td>
+                                <td>Adaugă toate fișierele create în zona de pregătire (staging area) pentru salvare.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><code>git commit -m "Adaugat proiectul studiu de caz complet"</code></td>
+                                <td>Salvează modificările în istoricul local cu un mesaj explicativ.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><code>git branch -M main</code></td>
+                                <td>Redenumește ramura implicită de lucru în "main" (standardul GitHub).</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><code>git remote add origin https://github.com</code></td>
+                                <td>Conectează folderul tău local cu repository-ul online creat pe contul tău de GitHub.</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><code>git push -u origin main</code></td>
+                                <td>Încarcă securizat codul pe serverul GitHub. Ulterior, pagina poate fi hostată public.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secțiunea 3: Resurse Utile -->
+        <section id="resurse-utile" class="container">
+            <div class="section-box">
+                <h2>Resurse Utile utilizate în Cercetare</h2>
+                <p>Documentațiile oficiale folosite pentru realizarea acestui studiu de caz sunt listate mai jos conform cerințelor stabilite:</p>
+                <ul>
+                    <li><a href="https://docs.github.com/en/get-started" target="_blank">GitHub Docs - Get Started Guide</a></li>
+                    <li><a href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github" target="_blank">W3Schools Git Remote (Ghid Configurare 1)</a></li>
+                    <li><a href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github" target="_blank">W3Schools Git Remote (Ghid Configurare 2)</a></li>
+                    <li><a href="https://docs.github.com/en" target="_blank">GitHub Documentation Home</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Subsol Pagina -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#studiu-caz">Studiu de Caz</a></li>
+            <li><a href="#ghid-comenzi">Ghid GitBash</a></li>
+            <li><a href="#resurse-utile">Resurse Utile</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Proiect Academic — Studiu de Caz GitHub. Toate drepturile rezervate.</p>
+    </footer>
